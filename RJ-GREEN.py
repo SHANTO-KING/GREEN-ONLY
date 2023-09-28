@@ -499,7 +499,7 @@ def c(uid,pwx,tl):
                 if ckkx=='LOCK':
                     break
                     #Lock show hobey na
-                    #-------checker------#
+#-------checker------#
 def lock_check(uid):
     sessionx=requests.Session()
     urlx=f'https://www.facebook.com/p/{uid}'
