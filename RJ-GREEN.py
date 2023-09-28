@@ -500,7 +500,7 @@ def c(uid,pwx,tl):
                     break
                     #Lock show hobey na
 #-------checker------#
-def lock_check(uid):
+    def lock_check(uid):
     sessionx=requests.Session()
     urlx=f'https://www.facebook.com/p/{uid}'
     req=bxx(sessionx.get(urlx).content,'html.parser')
