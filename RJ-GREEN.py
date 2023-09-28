@@ -243,7 +243,7 @@ def virus():
 		print(logo)
 		tl = str(len(user))
 		print(' []  Total ids:\033[1;92m '+tl)
-		print(f' []  Usaragents : '+str(len(ugen)))
+		print(f' []  Useragents : '+str(len(ugen)))
 		print(f' []\033[1;97m  target sim code :\033[1;92m {kode} ')
 		print(f"\033[1;97m []  version:\033[1;92m {doamin}")
 		print(' \033[1;97m[]  The process has been started')
