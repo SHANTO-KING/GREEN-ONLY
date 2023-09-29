@@ -493,7 +493,7 @@ def c(uid,pwx,tl):
                 open('/sdcard/LM-OK.txt', 'a').write(cid+' | '+ps+'\n')
                 break
                 
-       def lock(uid):
+def lock(uid):
         req = str(requests.get(f'https://graph.facebook.com/{uid}/picture?type=normal').text)
         if 'Photoshop' in req:
             return 'Active'
